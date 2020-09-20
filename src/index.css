@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+/* -- GENERAL -- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body 
+{
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root
+{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey; 
+}
+/* ----------------------- */
+
+
+
+/* -- PAGE STRUCTURE --- */
+.container 
+{
+  height: 80%;
+  width: 30%;
+  background-color: black;
+  box-shadow: 3px 3px 8px 3px black;
+}
+
+.container_header 
+{
+  width: 100%;
+  height: 10%;
+}
+
+.container_body
+{
+  width: 100%;
+  height: 80%;
+}
+
+.container_footer 
+{
+  width: 100%;
+  height: 10%;
+}
+
+/* --- HEADER-- */
+
+/* #1f2025 */
+
+.container_header
+{
+  display:flex;
+  align-items: center;
+}
+
+.weather_input
+{
+  height: 98%;
+  width: 80%;
+  color: white;
+  padding: 5px;
+  font-size: 1.5em;
+  background-color: black;
+  border: 1px solid black;
+  border-bottom-color: #1f2025;
+}
+
+.weather_input:hover {
+  border-bottom-color: white; 
+}
+
+.weather_check_button
+{
+  height: 98%;
+  width: 20%;
+  font-size: 1.5em;
+  color: grey;
+  background-color: black;
+  border: 1px solid black;
+  border-bottom-color: #1f2025;
+}
+
+.weather_check_button:hover
+{
+  color: white;
+  border-bottom-color: white;
+}
+
+.fas fa-search-location
+{
+  height: 100%;
+  width: 100%;
+}
+
+/*-- BODY -- */
+.container_body
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -- body boxes structure -- */
+.cb_box1, .cb_box2, .cb_box3, .cb_box4, .cb_box5 
+{
+  width: 100%;
+  padding: 5px;
+}
+
+.cb_box1
+{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cb_box2
+{
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cb_box3
+{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cb_box4
+{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cb_box5
+{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------- */
+
+.cb_box2 h1
+{
+  font-size: 4em;
+}
+
+.weather_symbols
+{
+  border: 1px solid black;
+  background-color:black;
+  font-size: 2em;
+  margin-right: 25px;
+  margin-left: -25px;
+}
+
+.cb_box5 h3
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* -- FOOTER -- */ 
+.container_footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celcius_button, .fahrenheit_button 
+{
+  color: grey;
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  background-color: black;
+  border: 1px solid black;
+  border-bottom: 1px solid #1f2025;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.celcius_button:hover
+{
+  color: white;
+  border-bottom-color: white;
+}
+
+.fahrenheit_button:hover
+{
+  color: white;
+  border-bottom-color: white;
+}
+
+
+.selected_temp
+{
+  color: white;
+  border-bottom-color:white;
+}
