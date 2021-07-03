@@ -181,7 +181,7 @@ window.onload = () => {
             unit = "imperial";
           }
         console.log(unit);
-        let responseUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=ccf077e48a163af71c92014dbbdea1cb`;
+        let responseUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=ccf077e48a163af71c92014dbbdea1cb`;
         let response = await fetch(responseUrl, {mode: 'cors'});
         let data = await response.json();
         this.handleData(data);
